@@ -1,0 +1,12 @@
+langchain==0.3.27
+langchain-core==0.3.79
+langchain-community==0.3.30
+langchain-google-genai==2.1.12
+langchain-pinecone==0.2.11
+langgraph==0.6.11
+pinecone==7.3.0
+streamlit==1.51.0
+python-dotenv==1.1.1
+langsmith==0.4.42
+pydantic==2.11.10
+pytest==8.4.2
