@@ -1,0 +1,22 @@
+{
+  "eval_id": 1,
+  "eval_name": "pre-commit-before-committing",
+  "prompt": "I'm about to commit my changes to the travel recommendation system. Before I commit, I need to make sure all tests pass and see a coverage report.",
+  "assertions": [
+    {
+      "name": "tests_executed",
+      "description": "Test suite successfully executes",
+      "check": "output contains 'passed' or 'failed'"
+    },
+    {
+      "name": "test_count_shown",
+      "description": "Number of passed/failed tests is displayed",
+      "check": "output contains test count like '13 passed'"
+    },
+    {
+      "name": "no_immediate_failure",
+      "description": "Skill does not stop on first failure (since all tests pass)",
+      "check": "output shows complete test run, not truncated"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "eval_id": 2,
+  "eval_name": "verify-changes-to-grounding",
+  "prompt": "I've made changes to the grounding check logic. Can you verify the tests still pass and show me the coverage for the grounding module?",
+  "assertions": [
+    {
+      "name": "grounding_tests_pass",
+      "description": "Grounding-related tests pass after changes",
+      "check": "output shows 'test_grounding.py' tests PASSED"
+    },
+    {
+      "name": "full_suite_runs",
+      "description": "Full test suite executes, not just grounding tests",
+      "check": "output shows tests from multiple modules (test_grounding, test_agent_node, test_retriever)"
+    },
+    {
+      "name": "summary_provided",
+      "description": "Test summary is provided at the end",
+      "check": "output contains final summary like '13 passed'"
+    }
+  ]
+}

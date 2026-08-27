@@ -1,0 +1,23 @@
+{
+  "skill_name": "pre-commit-test",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm about to commit my changes to the travel recommendation system. Before I commit, I need to make sure all tests pass and see a coverage report.",
+      "expected_output": "Test suite runs successfully, showing number of passed tests and coverage percentages for each module",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I've made changes to the grounding check logic. Can you verify the tests still pass and show me the coverage for the grounding module?",
+      "expected_output": "Tests execute and display results, highlighting any failures if they exist, plus coverage report",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Before pushing to production, I want to run a final test check to ensure nothing is broken and see if our coverage has improved.",
+      "expected_output": "Complete test output with summary of test results and coverage metrics",
+      "files": []
+    }
+  ]
+}

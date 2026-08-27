@@ -1,0 +1,22 @@
+{
+  "eval_id": 3,
+  "eval_name": "pre-production-final-check",
+  "prompt": "Before pushing to production, I want to run a final test check to ensure nothing is broken and see if our coverage has improved.",
+  "assertions": [
+    {
+      "name": "all_tests_pass",
+      "description": "All tests pass before production push",
+      "check": "output shows all tests PASSED with 0 failed"
+    },
+    {
+      "name": "no_warnings",
+      "description": "Test output is clean with no warnings or errors",
+      "check": "output does not contain 'FAILED', 'ERROR', or 'WARNING'"
+    },
+    {
+      "name": "complete_output",
+      "description": "Complete test results are shown for all modules",
+      "check": "output contains test names and results for all test files"
+    }
+  ]
+}
